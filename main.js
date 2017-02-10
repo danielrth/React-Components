@@ -6,9 +6,16 @@ React.render(
   document.getElementById('main')
 );
 
-var TimerExample = require('./components/Timer');
+var Timer = require('./components/Timer');
 
 React.render(
-    <TimerExample start={Date.now()} />,
+    <Timer start={Date.now()} />,
     document.getElementById('timer')
+);
+
+var Menu = require('./components/Menu');
+
+React.render(
+	<Menu items={ ['Home', 'Services', 'About', 'Contact us'] } />,
+	document.getElementById('menu')
 );
