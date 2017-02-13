@@ -13,7 +13,7 @@ var Menu = React.createClass({
 		var self = this;
 		return (
 			<div>
-				<ul>{ this.props.items.map(function(m, index){
+				<ul className="menu">{ this.props.items.map(function(m, index){
 					var style = '';
 
 					if(self.state.focused == index){
